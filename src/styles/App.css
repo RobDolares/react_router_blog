@@ -1,0 +1,153 @@
+a {
+  color: #222222;
+}
+
+/***** NavBar *****/
+
+#navContainer {
+  position: sticky;
+  top: 0px;
+
+}
+
+.navbar {
+  margin:0;
+  border-radius: 0;
+}
+
+nav .navNarrow i {
+  width: 100%;
+  margin: auto;
+  padding:10px;
+	text-align: center;
+	cursor: pointer;
+	color: #999;
+}
+
+.navWide {
+  display: none;
+}
+
+.navNarrow .narrowLinks {
+  display:none;
+}
+
+.navNarrow .narrowLinks li {
+
+  text-align: center;
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 0;
+}
+
+#navContainer li span {
+  font-size: 1.8rem;
+}
+
+#navContainer li:nth-child(2) span {
+  font-size: 2.4em;
+}
+
+@media (min-width:768px) {
+  nav .navWide {
+    display: block;
+  }
+  nav .navNarrow {
+    display: none;
+  }
+
+  #navContainer li:nth-child(1) span {
+    font-size: 2.4em;
+  }
+}
+
+#frogLogo {
+  height: 50px;
+  margin: 0px;
+  padding-top: 8px;
+}
+
+/*****  Home Page *****/
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/frogbg.jpg');
+  height: 100vh;
+  margin-top: -55px;
+}
+
+#homeTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10%;
+  padding: 20px;
+  }
+
+#homeTitle h1 {
+  font-size: 4em;
+  padding:10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+  color: rgba(255,255,255,0.9);
+}
+
+#homeTitle h3 {
+  font-size: 2em;
+  padding:10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+  color: rgba(255,255,255,0.9);
+}
+
+/***** CreatePost *****/
+
+#blog-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+/***** PostList *****/
+
+.postlistSingle {
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid #222;
+}
+
+#postList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  padding:20px;
+}
+
+#postList h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+/***** ShowPost *****/
+
+.showPost {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top:40px;
+}
+
+.showPost h3 {
+  font-size: 3em;
+}
+
+#blogPostBody {
+  margin: 20px auto;
+}
